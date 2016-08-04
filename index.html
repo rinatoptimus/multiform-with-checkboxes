@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<form action="obrabotka.php" method="post" name="form1">
+    Введите Ф.И.О.:&nbsp;<input type="text" name="fio"><br><br>
+    Введите пароль:&nbsp;<input type="password" name="pass"><br><br>
+    Введите e-mail:&nbsp;&nbsp;&nbsp;<input type="text" name="email"><br><br>
+    Выберите вариант носителя информации:<br>
+    <input type="radio" name="disc" value="cd">CD<br>
+    <input type="radio" name="disc" value="dvd" checked>DVD<br><br>
+    Укажите какие курсы вы хотите видеть на диске:<br>
+    <!-- <input type="checkbox" name="check" value="Курс по созданию сайта; ">Курс по созданию сайта.<br>
+    <input type="checkbox" name="check" value="Курс по созданию книг">Курс по созданию книг.<br>
+    <input type="checkbox" name="check" value="Курс по созданию документов">Курс по созданию документов.<br>
+    <input type="checkbox" name="check" value="Курс по созданию папок">Курс по созданию папок.<br>
+    <input type="checkbox" name="check" value="Курс по созданию статей">Курс по созданию статей.<br>
+    <input type="checkbox" name="check" value="Курс по созданию текстов">Курс по созданию текстов.<br><br> -->
+    <input type="checkbox" name="check[]" value="Курс по созданию сайта; ">Курс по созданию сайта.<br>
+    <input type="checkbox" name="check[]" value="Курс по созданию книг">Курс по созданию книг.<br>
+    <input type="checkbox" name="check[]" value="Курс по созданию документов">Курс по созданию документов.<br>
+    <input type="checkbox" name="check[]" value="Курс по созданию папок">Курс по созданию папок.<br>
+    <input type="checkbox" name="check[]" value="Курс по созданию статей">Курс по созданию статей.<br>
+    <input type="checkbox" name="check[]" value="Курс по созданию текстов">Курс по созданию текстов.<br>
+    Укажите тип доставки:<br>
+    <select name="delivery" size="1">
+        <option value="Срочная">Срочная</option>
+        <option value="Обычная">Обычная</option>
+    </select>
+    <br><br>
+    Введите свой домашний адрес и примечания:<br>
+    <textarea name="address" rows="5" cols="30"></textarea><br>  
+    <input type="submit" value="Отправить">
+</form>
